@@ -1,4 +1,4 @@
-# Max/MSP Patches, Abstractions, Externals, RNBO, and VSTs
+# Max/MSP Patches, Abstractions, Externals, RNBO, VSTs, and Ableton Max for Live
 
 ## br.overdrive.1.0
 
@@ -16,13 +16,14 @@ These files were created with Max 9, or RNBO.
 
 [About](#About)
 [Max/MSP Abstraction](https://github.com/guaguanco127/br.overdrive/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP
-[Max/MSP RNBO for External or VST](https://github.com/guaguanco127/br.overdrive/tree/main/RNBO%20Patchers%20for%20External%20or%20VST) To build your own Max external, or a VST or AU audio plugin (needs RNBO)
+[Max/MSP RNBO for External or VST](https://github.com/guaguanco127/br.overdrive/tree/main/RNBO%20Patchers%20for%20External%20or%20VST) To build your own Max external, or a VST or AU audio plugin (needs RNBO)  
+[Ableton Max for Live Device](https://github.com/guaguanco127/br.overdrive/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
 
 ## <a name="About"></a>About
 
 Overdrive, stereo, built in gen~. Tight cuts the lows before the drive so it stays tight instead of muddy; Drive pushes the signal into a smooth tanh curve; Bias makes the two halves of the wave clip differently, for the warm even harmonics of a tube stage; Tone rolls off the fizz after the drive. Auto-gain keeps the level steady as Drive goes up, so Drive changes the sound, not the loudness. Antialiased, so high Drive stays clean. Every control fades, so nothing clicks, and Off pauses the DSP.
 
-You can use it as an abstraction within Max/MSP. With RNBO you can also build your own Max external or VST/AU plugin from the included RNBO patch.
+You can use it as an abstraction within Max/MSP or as a Max for Live device within Ableton Live Suite. With RNBO you can also build your own Max external or VST/AU plugin from the included RNBO patch.
 
 **Drive:** 0 to 128 dB. How hard the signal is pushed into the curve. The dial is curved, so most of its travel covers the musical range (about 32 dB at noon). Unlike a normalized saturator, the result depends on how hard you play: loud notes break up more than quiet ones. Near the top it behaves like a fuzz: even the noise floor of a quiet input gets pushed into the curve, so gate the input or back off Drive if you hear hiss between notes. Default 18.
 
