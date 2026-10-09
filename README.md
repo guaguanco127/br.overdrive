@@ -2,20 +2,20 @@
 
 ## br.overdrive.1.0
 
-By Brian Riordan
-[guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)
-[brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)
+By Brian Riordan  
+[guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)  
+[brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/)
 
-Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)
+Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9, or RNBO.
 
 ## Links
 
-[About](#About)
-[Max/MSP Abstraction](https://github.com/guaguanco127/br.overdrive/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP
+[About](#About)  
+[Max/MSP Abstraction](https://github.com/guaguanco127/br.overdrive/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP  
 [Max/MSP RNBO for External or VST](https://github.com/guaguanco127/br.overdrive/tree/main/RNBO%20Patchers%20for%20External%20or%20VST) To build your own Max external, or a VST or AU audio plugin (needs RNBO)  
 [Ableton Max for Live Device](https://github.com/guaguanco127/br.overdrive/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
 
@@ -70,7 +70,7 @@ The UI version contains the plain version and has the same inlets and audio outl
 | 9 | Dry/Wet | Signal or Float (UI: Float only) | % 0 to 100 | 100 |
 | 10 | On/Off | Signal or Int (UI: Int only) | 0 off, 1 on | 1 |
 
-Outlets 1 / 2: Left Out / Right Out (Signal)
+Outlets 1 / 2: Left Out / Right Out (Signal)  
 Outlet 3 (UI version only): State (Message), see [State outlet](#State)
 
 Every control fades, so you can change anything while audio plays, and every control also takes a signal or a number (the example patch sweeps Drive with a slow sine). In the UI version a number into an inlet moves its control, so the screen always shows what you hear. Hover any inlet or outlet in Max for its description.

@@ -1,23 +1,23 @@
 # Max/MSP Abstraction: br.overdrive.1.0
 
-By Brian Riordan
-[guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)
-[brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)
+By Brian Riordan  
+[guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)  
+[brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/)
 
-Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)
+Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9.
 
 ## Table of Contents
 
-[About](#About)
-[Which file?](#Files)
-[What is an abstraction?](#Abstraction)
-[How To Install](#Install)
-[How To Use](#Use)
-[State outlet](#State)
+[About](#About)  
+[Which file?](#Files)  
+[What is an abstraction?](#Abstraction)  
+[How To Install](#Install)  
+[How To Use](#Use)  
+[State outlet](#State)  
 [Credits](#Credits)
 
 ## <a name="About"></a>About
@@ -79,7 +79,7 @@ By saving your logic in an abstraction, you can create modules that can be used 
 | 9 | Dry/Wet | Signal or Float (UI: Float only) | % 0 to 100 | 100 |
 | 10 | On/Off | Signal or Int (UI: Int only) | 0 off, 1 on | 1 |
 
-Outlets 1 / 2: Left Out / Right Out (Signal)
+Outlets 1 / 2: Left Out / Right Out (Signal)  
 Outlet 3 (UI version only): State (Message), see [State outlet](#State)
 
 Every control fades, so you can change anything while audio plays, and every control also takes a signal or a number (the example patch sweeps Drive with a slow sine). In the UI version a number into an inlet moves its control, so the screen always shows what you hear. Hover any inlet or outlet in Max for its description.
