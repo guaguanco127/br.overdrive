@@ -1,22 +1,22 @@
 # Max/MSP RNBO Patch for External or VST Creation: br.overdrive.rnbo.1.0
 
-By Brian Riordan
-[guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)
-[brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)
+By Brian Riordan  
+[guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)  
+[brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/)
 
-Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)
+Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9 and RNBO.
 
 ## Table of Contents
 
-[About](#About)
-[What is an External for Max/MSP?](#External)
-[What is a VST or AU Audio Plugin?](#VST)
-[How To Export as a Max/MSP External](#Export)
-[How To Export as a VST or AU Audio Plugin](#ExportVST)
+[About](#About)  
+[What is an External for Max/MSP?](#External)  
+[What is a VST or AU Audio Plugin?](#VST)  
+[How To Export as a Max/MSP External](#Export)  
+[How To Export as a VST or AU Audio Plugin](#ExportVST)  
 [Credits](#Credits)
 
 ## <a name="About"></a>About

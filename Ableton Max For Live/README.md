@@ -1,11 +1,11 @@
 # Ableton Max for Live device: br.overdrive.1.0  
    
-By Brian Riordan
-[guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)
-[brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)
+By Brian Riordan  
+[guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)  
+[brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/)
 
-Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)
+Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9.
