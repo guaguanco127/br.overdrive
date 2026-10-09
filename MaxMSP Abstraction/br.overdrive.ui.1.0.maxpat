@@ -619,8 +619,8 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [
-                                "val1",
-                                "val2"
+                                "off",
+                                "on"
                             ],
                             "parameter_initial": [
                                 1
@@ -1004,8 +1004,8 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [
-                                "val1",
-                                "val2"
+                                "off",
+                                "on"
                             ],
                             "parameter_initial": [
                                 1
