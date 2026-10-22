@@ -675,18 +675,18 @@
                                                 134.0,
                                                 87.0,
                                                 1300.0,
-                                                884.0
+                                                883.0
                                             ],
                                             "boxes": [
                                                 {
                                                     "box": {
                                                         "maxclass": "newobj",
                                                         "text": "in 1 @comment \"Left In (Signal)\"",
-                                                        "linecount": 2,
+                                                        "linecount": 6,
                                                         "patching_rect": [
                                                             29.0,
                                                             20.0,
-                                                            100.0,
+                                                            52.0,
                                                             89.0
                                                         ],
                                                         "numinlets": 0,
@@ -708,7 +708,7 @@
                                                             91.0,
                                                             130.0,
                                                             100.0,
-                                                            89.0
+                                                            49.0
                                                         ],
                                                         "numinlets": 0,
                                                         "fontname": "Arial",
@@ -724,11 +724,11 @@
                                                     "box": {
                                                         "maxclass": "newobj",
                                                         "text": "in 3 @comment \"Drive (Signal/Float) dB 0 to 128 -- default 18\" @default 18",
-                                                        "linecount": 5,
+                                                        "linecount": 6,
                                                         "patching_rect": [
                                                             153.0,
                                                             240.0,
-                                                            100.0,
+                                                            101.0,
                                                             89.0
                                                         ],
                                                         "numinlets": 0,
@@ -749,7 +749,7 @@
                                                         "patching_rect": [
                                                             215.0,
                                                             350.0,
-                                                            100.0,
+                                                            101.0,
                                                             89.0
                                                         ],
                                                         "numinlets": 0,
@@ -768,9 +768,9 @@
                                                         "text": "in 5 @comment \"Tone (Signal/Float) Hz 500 to 20000 -- default 8000\" @default 8000",
                                                         "linecount": 6,
                                                         "patching_rect": [
-                                                            277.0,
+                                                            366.0,
                                                             20.0,
-                                                            100.0,
+                                                            101.0,
                                                             89.0
                                                         ],
                                                         "numinlets": 0,
@@ -789,7 +789,7 @@
                                                         "text": "in 6 @comment \"Bias (Signal/Float) % 0 to 100 -- default 20\" @default 20",
                                                         "linecount": 6,
                                                         "patching_rect": [
-                                                            339.0,
+                                                            428.0,
                                                             130.0,
                                                             100.0,
                                                             89.0
@@ -810,10 +810,10 @@
                                                         "text": "in 7 @comment \"Auto-gain (Signal/Int) 0 off 1 on -- default 1\" @default 1",
                                                         "linecount": 5,
                                                         "patching_rect": [
-                                                            401.0,
-                                                            240.0,
+                                                            580.0,
+                                                            253.0,
                                                             100.0,
-                                                            89.0
+                                                            76.0
                                                         ],
                                                         "numinlets": 0,
                                                         "fontname": "Arial",
@@ -831,9 +831,9 @@
                                                         "text": "in 8 @comment \"Level (Signal/Float) dB -24 to 12 -- default 0\" @default 0",
                                                         "linecount": 6,
                                                         "patching_rect": [
-                                                            463.0,
-                                                            350.0,
-                                                            100.0,
+                                                            696.0,
+                                                            339.0,
+                                                            101.0,
                                                             89.0
                                                         ],
                                                         "numinlets": 0,
@@ -852,8 +852,8 @@
                                                         "text": "in 9 @comment \"Dry/Wet (Signal/Float) % 0 to 100 -- default 100\" @default 100",
                                                         "linecount": 6,
                                                         "patching_rect": [
-                                                            525.0,
-                                                            20.0,
+                                                            824.0,
+                                                            110.0,
                                                             100.0,
                                                             89.0
                                                         ],
@@ -871,11 +871,11 @@
                                                     "box": {
                                                         "maxclass": "newobj",
                                                         "text": "in 10 @comment \"On/Off (Signal/Int) 1 on 0 off -- default 1\" @default 1",
-                                                        "linecount": 5,
+                                                        "linecount": 6,
                                                         "patching_rect": [
-                                                            587.0,
-                                                            130.0,
-                                                            100.0,
+                                                            886.0,
+                                                            220.0,
+                                                            98.0,
                                                             89.0
                                                         ],
                                                         "numinlets": 0,
@@ -979,6 +979,12 @@
                                                         "destination": [
                                                             "obj-20",
                                                             9
+                                                        ],
+                                                        "midpoints": [
+                                                            895.5,
+                                                            432.5,
+                                                            919.5,
+                                                            432.5
                                                         ]
                                                     }
                                                 },
@@ -991,6 +997,12 @@
                                                         "destination": [
                                                             "obj-20",
                                                             8
+                                                        ],
+                                                        "midpoints": [
+                                                            833.5,
+                                                            377.5,
+                                                            821.6111111111111,
+                                                            377.5
                                                         ]
                                                     }
                                                 },
@@ -1003,6 +1015,12 @@
                                                         "destination": [
                                                             "obj-20",
                                                             7
+                                                        ],
+                                                        "midpoints": [
+                                                            705.5,
+                                                            492.0,
+                                                            723.7222222222222,
+                                                            492.0
                                                         ]
                                                     }
                                                 },
@@ -1015,6 +1033,12 @@
                                                         "destination": [
                                                             "obj-20",
                                                             6
+                                                        ],
+                                                        "midpoints": [
+                                                            589.5,
+                                                            442.5,
+                                                            625.8333333333334,
+                                                            442.5
                                                         ]
                                                     }
                                                 },
@@ -1027,6 +1051,12 @@
                                                         "destination": [
                                                             "obj-20",
                                                             5
+                                                        ],
+                                                        "midpoints": [
+                                                            437.5,
+                                                            387.5,
+                                                            527.9444444444445,
+                                                            387.5
                                                         ]
                                                     }
                                                 },
@@ -1039,6 +1069,12 @@
                                                         "destination": [
                                                             "obj-20",
                                                             4
+                                                        ],
+                                                        "midpoints": [
+                                                            375.5,
+                                                            332.5,
+                                                            430.05555555555554,
+                                                            332.5
                                                         ]
                                                     }
                                                 },
@@ -1051,6 +1087,12 @@
                                                         "destination": [
                                                             "obj-20",
                                                             3
+                                                        ],
+                                                        "midpoints": [
+                                                            224.5,
+                                                            497.5,
+                                                            332.1666666666667,
+                                                            497.5
                                                         ]
                                                     }
                                                 },
@@ -1063,6 +1105,12 @@
                                                         "destination": [
                                                             "obj-20",
                                                             2
+                                                        ],
+                                                        "midpoints": [
+                                                            162.5,
+                                                            518.5519409179688,
+                                                            234.27777777777777,
+                                                            518.5519409179688
                                                         ]
                                                     }
                                                 },
@@ -1075,6 +1123,12 @@
                                                         "destination": [
                                                             "obj-20",
                                                             1
+                                                        ],
+                                                        "midpoints": [
+                                                            100.5,
+                                                            367.5,
+                                                            136.38888888888889,
+                                                            367.5
                                                         ]
                                                     }
                                                 },
@@ -1087,6 +1141,12 @@
                                                         "destination": [
                                                             "obj-20",
                                                             0
+                                                        ],
+                                                        "midpoints": [
+                                                            38.5,
+                                                            332.5,
+                                                            38.5,
+                                                            332.5
                                                         ]
                                                     }
                                                 }

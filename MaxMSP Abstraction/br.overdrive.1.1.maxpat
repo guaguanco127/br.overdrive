@@ -9,12 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [
-            85.0,
-            104.0,
-            1180.0,
-            360.0
-        ],
+        "rect": [ 85.0, 104.0, 1180.0, 360.0 ],
         "description": "br.overdrive.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: antiderivative anti-aliasing (Parker, Zavalishin & Le Bivic, \"Reducing the Aliasing of Nonlinear Waveshaping Using Continuous-Time Convolution\", DAFx-16, 2016).",
         "boxes": [
             {
@@ -22,207 +17,132 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-signature",
+                    "linecount": 5,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        800.0,
-                        15.0,
-                        440.0,
-                        74.0
-                    ],
-                    "text": "br.overdrive.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: antiderivative anti-aliasing (Parker, Zavalishin & Le Bivic, \"Reducing the Aliasing of Nonlinear Waveshaping Using Continuous-Time Convolution\", DAFx-16, 2016).",
-                    "linecount": 5
+                    "patching_rect": [ 800.0, 15.0, 440.0, 74.0 ],
+                    "text": "br.overdrive.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: antiderivative anti-aliasing (Parker, Zavalishin & Le Bivic, \"Reducing the Aliasing of Nonlinear Waveshaping Using Continuous-Time Convolution\", DAFx-16, 2016)."
                 }
             },
             {
                 "box": {
                     "comment": "Left In (Signal)",
                     "id": "obj-1",
-                    "index": 1,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        15.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 15.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Right In (Signal)",
                     "id": "obj-2",
-                    "index": 2,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        90.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 90.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Drive (Signal/Float) dB 0. to 128. How hard the signal is pushed into the curve: more Drive = more distortion. Default 18",
                     "id": "obj-3",
-                    "index": 3,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        165.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 165.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Tight (Signal/Float) Hz 20. to 1000. 12 dB/oct high-pass BEFORE the drive: lows push the curve hardest and turn to mud, so cutting them first keeps the distortion tight. 20 = open. Default 20",
                     "id": "obj-4",
-                    "index": 4,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        240.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 240.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Tone (Signal/Float) Hz 500. to 20000. 12 dB/oct low-pass AFTER the drive: tames the fizz the drive adds on top. Default 8000",
                     "id": "obj-5",
-                    "index": 5,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        315.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 315.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Bias (Signal/Float) % 0. to 100. Shifts the curve so the two halves of the wave clip differently: adds even harmonics, the warm tube sound. 0 = symmetric, odd harmonics only. A DC blocker removes the offset it makes. Default 20",
                     "id": "obj-6",
-                    "index": 6,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        390.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 390.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Auto-gain (Signal/Int) 0 off, 1 on: more Drive makes it louder, so this cuts by what the drive adds, keeping a -12 dB peak input near the same peak at any Drive. Default 1",
                     "id": "obj-7",
-                    "index": 7,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        465.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 465.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Level (Signal/Float) dB -24. to 12. Output level of the driven signal, before Dry/Wet: match it to the bypass sound. Default 0",
                     "id": "obj-8",
-                    "index": 8,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        540.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 540.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Dry/Wet (Signal/Float) % 0. to 100. Linear blend. Default 100",
                     "id": "obj-9",
-                    "index": 9,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        615.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 615.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "On/Off (Signal/Int) 1 on, 0 off. Off fades to the dry signal at full level over 20 ms, then the DSP pauses (no CPU). Default 1",
                     "id": "obj-10",
-                    "index": 10,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        690.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 690.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -233,10 +153,7 @@
                     "maxclass": "newobj",
                     "numinlets": 10,
                     "numoutlets": 2,
-                    "outlettype": [
-                        "signal",
-                        "signal"
-                    ],
+                    "outlettype": [ "signal", "signal" ],
                     "patcher": {
                         "fileversion": 1,
                         "appversion": {
@@ -247,12 +164,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "dsp.gen",
-                        "rect": [
-                            134.0,
-                            87.0,
-                            1300.0,
-                            884.0
-                        ],
+                        "rect": [ 134.0, 87.0, 1300.0, 883.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -263,15 +175,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        29.0,
-                                        20.0,
-                                        100.0,
-                                        89.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 29.0, 20.0, 52.0, 89.0 ],
                                     "text": "in 1 @comment \"Left In (Signal)\""
                                 }
                             },
@@ -280,19 +185,12 @@
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
                                     "id": "obj-2",
-                                    "linecount": 6,
+                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        91.0,
-                                        130.0,
-                                        100.0,
-                                        89.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 91.0, 130.0, 100.0, 49.0 ],
                                     "text": "in 2 @comment \"Right In (Signal)\""
                                 }
                             },
@@ -305,15 +203,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        153.0,
-                                        240.0,
-                                        100.0,
-                                        89.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 153.0, 240.0, 101.0, 89.0 ],
                                     "text": "in 3 @comment \"Drive (Signal/Float) dB 0 to 128 -- default 18\" @default 18"
                                 }
                             },
@@ -326,15 +217,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        215.0,
-                                        350.0,
-                                        100.0,
-                                        89.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 215.0, 350.0, 101.0, 89.0 ],
                                     "text": "in 4 @comment \"Tight (Signal/Float) Hz 20 to 1000, 20 = open -- default 20\" @default 20"
                                 }
                             },
@@ -347,15 +231,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        277.0,
-                                        20.0,
-                                        100.0,
-                                        89.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 366.0, 20.0, 101.0, 89.0 ],
                                     "text": "in 5 @comment \"Tone (Signal/Float) Hz 500 to 20000 -- default 8000\" @default 8000"
                                 }
                             },
@@ -368,15 +245,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        339.0,
-                                        130.0,
-                                        100.0,
-                                        89.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 428.0, 130.0, 100.0, 89.0 ],
                                     "text": "in 6 @comment \"Bias (Signal/Float) % 0 to 100 -- default 20\" @default 20"
                                 }
                             },
@@ -385,19 +255,12 @@
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
                                     "id": "obj-7",
-                                    "linecount": 6,
+                                    "linecount": 5,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        401.0,
-                                        240.0,
-                                        100.0,
-                                        89.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 580.0, 253.0, 100.0, 76.0 ],
                                     "text": "in 7 @comment \"Auto-gain (Signal/Int) 0 off 1 on -- default 1\" @default 1"
                                 }
                             },
@@ -410,15 +273,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        463.0,
-                                        350.0,
-                                        100.0,
-                                        89.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 696.0, 339.0, 101.0, 89.0 ],
                                     "text": "in 8 @comment \"Level (Signal/Float) dB -24 to 12 -- default 0\" @default 0"
                                 }
                             },
@@ -431,15 +287,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        525.0,
-                                        20.0,
-                                        100.0,
-                                        89.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 824.0, 110.0, 100.0, 89.0 ],
                                     "text": "in 9 @comment \"Dry/Wet (Signal/Float) % 0 to 100 -- default 100\" @default 100"
                                 }
                             },
@@ -452,15 +301,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        587.0,
-                                        130.0,
-                                        100.0,
-                                        89.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 886.0, 220.0, 98.0, 89.0 ],
                                     "text": "in 10 @comment \"On/Off (Signal/Int) 1 on 0 off -- default 1\" @default 1"
                                 }
                             },
@@ -474,16 +316,8 @@
                                     "maxclass": "codebox",
                                     "numinlets": 10,
                                     "numoutlets": 2,
-                                    "outlettype": [
-                                        "",
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        29.0,
-                                        556.0,
-                                        900.0,
-                                        2400.0
-                                    ]
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 29.0, 556.0, 900.0, 2400.0 ]
                                 }
                             },
                             {
@@ -494,12 +328,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [
-                                        29.0,
-                                        2980.0,
-                                        200.0,
-                                        22.0
-                                    ],
+                                    "patching_rect": [ 29.0, 2980.0, 200.0, 22.0 ],
                                     "text": "out 1 @comment \"Left Out (Signal)\""
                                 }
                             },
@@ -511,12 +340,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [
-                                        770.0,
-                                        2980.0,
-                                        207.0,
-                                        22.0
-                                    ],
+                                    "patching_rect": [ 770.0, 2980.0, 207.0, 22.0 ],
                                     "text": "out 2 @comment \"Right Out (Signal)\""
                                 }
                             }
@@ -524,156 +348,89 @@
                         "lines": [
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-1",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        0
-                                    ]
+                                    "destination": [ "obj-20", 0 ],
+                                    "midpoints": [ 38.5, 332.5, 38.5, 332.5 ],
+                                    "source": [ "obj-1", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-2",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        1
-                                    ]
+                                    "destination": [ "obj-20", 9 ],
+                                    "midpoints": [ 895.5, 432.5, 919.5, 432.5 ],
+                                    "source": [ "obj-10", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-3",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        2
-                                    ]
+                                    "destination": [ "obj-20", 1 ],
+                                    "midpoints": [ 100.5, 367.5, 136.38888888888889, 367.5 ],
+                                    "source": [ "obj-2", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-4",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        3
-                                    ]
+                                    "destination": [ "obj-21", 0 ],
+                                    "source": [ "obj-20", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-5",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        4
-                                    ]
+                                    "destination": [ "obj-22", 0 ],
+                                    "source": [ "obj-20", 1 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-6",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        5
-                                    ]
+                                    "destination": [ "obj-20", 2 ],
+                                    "midpoints": [ 162.5, 518.5519409179688, 234.27777777777777, 518.5519409179688 ],
+                                    "source": [ "obj-3", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-7",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        6
-                                    ]
+                                    "destination": [ "obj-20", 3 ],
+                                    "midpoints": [ 224.5, 497.5, 332.1666666666667, 497.5 ],
+                                    "source": [ "obj-4", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-8",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        7
-                                    ]
+                                    "destination": [ "obj-20", 4 ],
+                                    "midpoints": [ 375.5, 332.5, 430.05555555555554, 332.5 ],
+                                    "source": [ "obj-5", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-9",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        8
-                                    ]
+                                    "destination": [ "obj-20", 5 ],
+                                    "midpoints": [ 437.5, 387.5, 527.9444444444445, 387.5 ],
+                                    "source": [ "obj-6", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-10",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        9
-                                    ]
+                                    "destination": [ "obj-20", 6 ],
+                                    "midpoints": [ 589.5, 442.5, 625.8333333333334, 442.5 ],
+                                    "source": [ "obj-7", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-20",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-21",
-                                        0
-                                    ]
+                                    "destination": [ "obj-20", 7 ],
+                                    "midpoints": [ 705.5, 492.0, 723.7222222222222, 492.0 ],
+                                    "source": [ "obj-8", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-20",
-                                        1
-                                    ],
-                                    "destination": [
-                                        "obj-22",
-                                        0
-                                    ]
+                                    "destination": [ "obj-20", 8 ],
+                                    "midpoints": [ 833.5, 377.5, 821.6111111111111, 377.5 ],
+                                    "source": [ "obj-9", 0 ]
                                 }
                             }
                         ]
                     },
-                    "patching_rect": [
-                        15.0,
-                        110.0,
-                        705.0,
-                        22.0
-                    ],
+                    "patching_rect": [ 15.0, 110.0, 705.0, 22.0 ],
                     "text": "gen~ @title br.overdrive.1.1"
                 }
             },
@@ -681,32 +438,22 @@
                 "box": {
                     "comment": "Left Out (Signal)",
                     "id": "obj-21",
-                    "index": 1,
+                    "index": 0,
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        15.0,
-                        170.0,
-                        30.0,
-                        30.0
-                    ]
+                    "patching_rect": [ 15.0, 170.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Right Out (Signal)",
                     "id": "obj-22",
-                    "index": 2,
+                    "index": 0,
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        705.0,
-                        170.0,
-                        30.0,
-                        30.0
-                    ]
+                    "patching_rect": [ 705.0, 170.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -714,165 +461,89 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-24",
+                    "linecount": 16,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        800.0,
-                        100.0,
-                        380.0,
-                        230.0
-                    ],
-                    "text": "br.overdrive: stereo overdrive. Tight cuts the lows before the drive so it stays tight; Drive pushes the signal into a tanh curve; Bias makes the two halves clip differently for warm even harmonics (a DC blocker removes the offset); Tone tames the fizz after the drive. Auto-gain evens out the level as Drive goes up, Level sets the driven signal, Dry/Wet is linear, On/Off fades to dry and then pauses the DSP. Antialiased (ADAA), so high Drive stays clean. All DSP is in the gen~; every control glides 20 ms, so nothing clicks. Defaults live in the gen~ (in N @default), so unconnected inlets need nothing. Every control inlet takes numbers OR signals. No State outlet here: whatever drives the core already knows the values. The .ui version reports them. [br.overdrive.ui.1.1] wraps this file with dials.",
-                    "linecount": 16
+                    "patching_rect": [ 800.0, 100.0, 300.0, 221.0 ],
+                    "text": "br.overdrive: stereo overdrive. Tight cuts the lows before the drive so it stays tight; Drive pushes the signal into a tanh curve; Bias makes the two halves clip differently for warm even harmonics (a DC blocker removes the offset); Tone tames the fizz after the drive. Auto-gain evens out the level as Drive goes up, Level sets the driven signal, Dry/Wet is linear, On/Off fades to dry and then pauses the DSP. Antialiased (ADAA), so high Drive stays clean. All DSP is in the gen~; every control glides 20 ms, so nothing clicks. Defaults live in the gen~ (in N @default), so unconnected inlets need nothing. Every control inlet takes numbers OR signals. No State outlet here: whatever drives the core already knows the values. The .ui version reports them. [br.overdrive.ui.1.1] wraps this file with dials."
                 }
             }
         ],
         "lines": [
             {
                 "patchline": {
-                    "source": [
-                        "obj-1",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        0
-                    ]
+                    "destination": [ "obj-20", 0 ],
+                    "source": [ "obj-1", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-2",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        1
-                    ]
+                    "destination": [ "obj-20", 9 ],
+                    "source": [ "obj-10", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-3",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        2
-                    ]
+                    "destination": [ "obj-20", 1 ],
+                    "source": [ "obj-2", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-4",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        3
-                    ]
+                    "destination": [ "obj-21", 0 ],
+                    "source": [ "obj-20", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-5",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        4
-                    ]
+                    "destination": [ "obj-22", 0 ],
+                    "source": [ "obj-20", 1 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-6",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        5
-                    ]
+                    "destination": [ "obj-20", 2 ],
+                    "source": [ "obj-3", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-7",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        6
-                    ]
+                    "destination": [ "obj-20", 3 ],
+                    "source": [ "obj-4", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-8",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        7
-                    ]
+                    "destination": [ "obj-20", 4 ],
+                    "source": [ "obj-5", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-9",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        8
-                    ]
+                    "destination": [ "obj-20", 5 ],
+                    "source": [ "obj-6", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-10",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        9
-                    ]
+                    "destination": [ "obj-20", 6 ],
+                    "source": [ "obj-7", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-20",
-                        0
-                    ],
-                    "destination": [
-                        "obj-21",
-                        0
-                    ]
+                    "destination": [ "obj-20", 7 ],
+                    "source": [ "obj-8", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-20",
-                        1
-                    ],
-                    "destination": [
-                        "obj-22",
-                        0
-                    ]
+                    "destination": [ "obj-20", 8 ],
+                    "source": [ "obj-9", 0 ]
                 }
             }
-        ]
+        ],
+        "autosave": 0
     }
 }
