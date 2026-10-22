@@ -1,11 +1,11 @@
-# Max/MSP RNBO Patch for External or VST Creation: br.overdrive.rnbo.1.0
+# Max/MSP RNBO Patch for External or VST Creation: br.overdrive.rnbo.1.1
 
 By Brian Riordan  
 guaguanco127 [at] gmail [dot] com  
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/)
 
-Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)  
+Repository for br.overdrive.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9 and RNBO.
@@ -23,7 +23,7 @@ These files were created with Max 9 and RNBO.
 
 Overdrive, stereo, built in gen~. Tight cuts the lows before the drive so it stays tight instead of muddy; Drive pushes the signal into a smooth tanh curve; Bias makes the two halves of the wave clip differently, for the warm even harmonics of a tube stage; Tone rolls off the fizz after the drive. Auto-gain keeps the level steady as Drive goes up, so Drive changes the sound, not the loudness. Antialiased, so high Drive stays clean. Every control fades, so nothing clicks, and Off pauses the DSP.
 
-Inside [rnbo~], the eight params (Drive, Tight, Tone, Bias, Auto_gain, Level, Dry_Wet, On_Off) are the plugin parameters, with the same ranges and dial curves as the Max version. Inlets 3 to 10 set the same params, so the external has the same ten inlets as the abstraction. The gen~ code inside is the same as br.overdrive.1.0.
+Inside [rnbo~], the eight params (Drive, Tight, Tone, Bias, Auto_gain, Level, Dry_Wet, On_Off) are the plugin parameters, with the same ranges and dial curves as the Max version. Inlets 3 to 10 set the same params, so the external has the same ten inlets as the abstraction. The gen~ code inside is the same as br.overdrive.1.1.
 
 **Drive:** 0 to 128 dB. How hard the signal is pushed into the curve. The dial is curved, so most of its travel covers the musical range (about 32 dB at noon). Unlike a normalized saturator, the result depends on how hard you play: loud notes break up more than quiet ones. Near the top it behaves like a fuzz: even the noise floor of a quiet input gets pushed into the curve, so gate the input or back off Drive if you hear hiss between notes. Default 18.
 
@@ -55,7 +55,7 @@ A VST is a third party audio plugin generally run within a digital audio worksta
 
 1. Make sure Max 9 is installed on your computer, and that you have an RNBO license.
 
-2. Open br.overdrive.rnbo.1.0.maxpat. Drop a sample of your own onto the [playlist~] to hear it.
+2. Open br.overdrive.rnbo.1.1.maxpat. Drop a sample of your own onto the [playlist~] to hear it.
 
 3. Double-click the [rnbo~] object while the patch is locked.
 
@@ -63,11 +63,11 @@ A VST is a third party audio plugin generally run within a digital audio worksta
 
 5. Select "Max External Export".
 
-6. Name the object br.overdrive.1.0~ and export.
+6. Name the object br.overdrive.1.1~ and export.
 
-**Keep the ~ at the end of the name.** Without it, the external has exactly the same name as the abstraction br.overdrive.1.0, and Max loads whichever one it finds first, so you can't be sure which one you're using. The ~ also follows the Max convention for objects that process audio. Any other name is fine as long as it isn't the name of an abstraction you also use.
+**Keep the ~ at the end of the name.** Without it, the external has exactly the same name as the abstraction br.overdrive.1.1, and Max loads whichever one it finds first, so you can't be sure which one you're using. The ~ also follows the Max convention for objects that process audio. Any other name is fine as long as it isn't the name of an abstraction you also use.
 
-7. Copy the exported .mxo (Mac) or .mxe64 (Windows) into a folder on Max's search path, for example Documents/Max 9/Externals, and add that folder in Options > File Preferences if it isn't listed. Then create an object called br.overdrive.1.0~ in any patch. It has the same inlets as the abstraction, except that the eight controls take numbers only.
+7. Copy the exported .mxo (Mac) or .mxe64 (Windows) into a folder on Max's search path, for example Documents/Max 9/Externals, and add that folder in Options > File Preferences if it isn't listed. Then create an object called br.overdrive.1.1~ in any patch. It has the same inlets as the abstraction, except that the eight controls take numbers only.
 
 ## <a name="ExportVST"></a>How To Export as a VST or AU Audio Plugin
 
@@ -75,7 +75,7 @@ A VST is a third party audio plugin generally run within a digital audio worksta
 
 1. Make sure Max 9 is installed on your computer, and that you have an RNBO license.
 
-2. Open br.overdrive.rnbo.1.0.maxpat.
+2. Open br.overdrive.rnbo.1.1.maxpat.
 
 3. Double-click the [rnbo~] object while the patch is locked.
 

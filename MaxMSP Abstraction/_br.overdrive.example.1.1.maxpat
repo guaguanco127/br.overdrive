@@ -10,7 +10,7 @@
         },
         "classnamespace": "box",
         "rect": [ 85.0, 104.0, 1480.0, 630.0 ],
-        "description": "_br.overdrive.example.1.0 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: antiderivative anti-aliasing (Parker, Zavalishin & Le Bivic, \"Reducing the Aliasing of Nonlinear Waveshaping Using Continuous-Time Convolution\", DAFx-16, 2016).",
+        "description": "_br.overdrive.example.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: antiderivative anti-aliasing (Parker, Zavalishin & Le Bivic, \"Reducing the Aliasing of Nonlinear Waveshaping Using Continuous-Time Convolution\", DAFx-16, 2016).",
         "showontab": 1,
         "boxes": [
             {
@@ -1043,7 +1043,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1007.0, 8.0, 470.0, 74.0 ],
-                    "text": "_br.overdrive.example.1.0 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: antiderivative anti-aliasing (Parker, Zavalishin & Le Bivic, \"Reducing the Aliasing of Nonlinear Waveshaping Using Continuous-Time Convolution\", DAFx-16, 2016)."
+                    "text": "_br.overdrive.example.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: antiderivative anti-aliasing (Parker, Zavalishin & Le Bivic, \"Reducing the Aliasing of Nonlinear Waveshaping Using Continuous-Time Convolution\", DAFx-16, 2016)."
                 }
             },
             {
@@ -1081,7 +1081,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 15.0, 118.0, 736.0, 60.0 ],
-                    "text": "Two files, same DSP inside:\nbr.overdrive.1.0 = core, no UI (in: L, R, Drive, Tight, Tone, Bias, Auto-gain, Level, Dry/Wet, On/Off; out: L, R).\nbr.overdrive.ui.1.0 = the same core with dials, for a bpatcher (Patching > Bpatcher, or drag the file in).\nBoth need to be in your Max search path (same folder as your patch is easiest)."
+                    "text": "Two files, same DSP inside:\nbr.overdrive.1.1 = core, no UI (in: L, R, Drive, Tight, Tone, Bias, Auto-gain, Level, Dry/Wet, On/Off; out: L, R).\nbr.overdrive.ui.1.1 = the same core with dials, for a bpatcher (Patching > Bpatcher, or drag the file in).\nBoth need to be in your Max search path (same folder as your patch is easiest)."
                 }
             },
             {
@@ -1155,7 +1155,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 860.0, 171.0, 175.0, 20.0 ],
-                    "text": "A: br.overdrive.ui.1.0"
+                    "text": "A: br.overdrive.ui.1.1"
                 }
             },
             {
@@ -1169,7 +1169,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "br.overdrive.ui.1.0.maxpat",
+                    "name": "br.overdrive.ui.1.1.maxpat",
                     "numinlets": 10,
                     "numoutlets": 3,
                     "offset": [ 0.0, 0.0 ],
@@ -1200,7 +1200,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "signal", "signal" ],
                     "patching_rect": [ 1052.0, 343.0, 380.0, 22.0 ],
-                    "text": "br.overdrive.1.0"
+                    "text": "br.overdrive.1.1"
                 }
             },
             {

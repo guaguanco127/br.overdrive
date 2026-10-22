@@ -1,13 +1,13 @@
 # Max/MSP Patches, Abstractions, Externals, RNBO, VSTs, and Ableton Max for Live
 
-## br.overdrive.1.0
+## br.overdrive.1.1
 
 By Brian Riordan  
 guaguanco127 [at] gmail [dot] com  
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/)
 
-Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)  
+Repository for br.overdrive.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9, or RNBO.
@@ -15,6 +15,7 @@ These files were created with Max 9, or RNBO.
 ## Links
 
 [About](#About)  
+[What's new in 1.1](#New11)  
 [Max/MSP Abstraction](https://github.com/guaguanco127/br.overdrive/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP  
 [Max/MSP RNBO for External or VST](https://github.com/guaguanco127/br.overdrive/tree/main/RNBO%20Patchers%20for%20External%20or%20VST) To build your own Max external, or a VST or AU audio plugin (needs RNBO)  
 [Ableton Max for Live Device](https://github.com/guaguanco127/br.overdrive/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
@@ -41,6 +42,10 @@ You can use it as an abstraction within Max/MSP or as a Max for Live device with
 
 **On/Off:** Off fades to the dry signal at full level over 20 ms, then the overdrive stops computing (no CPU) until it is switched back on. Default on.  
 
+## <a name="New11"></a>What's new in 1.1
+
+- **Readable dials in the Max for Live device:** the dials' values and needles are now white, so they stand out on the black panel (with Live's default theme they were dark and hard to read). The abstraction, RNBO patch and sound are unchanged; every file now has the version 1.1.
+
 ## <a name="How"></a>How it works
 
 Chain: Tight high-pass, then the drive gain, then tanh(gain x + bias) - tanh(bias), scaled by 1 / (1 + tanh(bias)) so the peak stays inside +-1. A 5 Hz DC blocker follows, then the Tone low-pass, Auto-gain, Level, the linear Dry/Wet and the On/Off fade. Both filters are 12 dB/oct state-variable (Q 0.707). The curve is antialiased with first-order ADAA (antiderivative antialiasing): each output sample is the average of the curve between the last input sample and this one, worked out from log(cosh), recomputed under the current Drive and Bias every sample so moving them never spikes. Auto-gain multiplies by 0.25 / tanh(gain x 0.25). Every control glides over 20 ms. Exact silence stays silent.
@@ -49,9 +54,9 @@ Chain: Tight high-pass, then the drive gain, then tanh(gain x + bias) - tanh(bia
 
 | File | What it is |
 |---|---|
-| br.overdrive.1.0 | No UI. The plain object to patch with |
-| br.overdrive.ui.1.0 | With dials for Drive, Tight, Tone, Bias, Level and Dry/Wet and Auto-gain and On/Off buttons, ready for a [bpatcher] (168 x 157) |
-| _br.overdrive.example.1.0 | Example patch: open this first. Pick a source (drum loop, voice, synth plucks, a stereo pair or your mic) |
+| br.overdrive.1.1 | No UI. The plain object to patch with |
+| br.overdrive.ui.1.1 | With dials for Drive, Tight, Tone, Bias, Level and Dry/Wet and Auto-gain and On/Off buttons, ready for a [bpatcher] (168 x 157) |
+| _br.overdrive.example.1.1 | Example patch: open this first. Pick a source (drum loop, voice, synth plucks, a stereo pair or your mic) |
 
 The UI version contains the plain version and has the same inlets and audio outlets (plus State last), so either swaps in without rewiring. Open the UI version in patching mode for comments on how it is built.
 

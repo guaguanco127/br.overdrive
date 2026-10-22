@@ -1,11 +1,11 @@
-# Max/MSP Abstraction: br.overdrive.1.0
+# Max/MSP Abstraction: br.overdrive.1.1
 
 By Brian Riordan  
 guaguanco127 [at] gmail [dot] com  
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/)
 
-Repository for br.overdrive.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)  
+Repository for br.overdrive.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.overdrive](https://github.com/guaguanco127/br.overdrive)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9.
@@ -44,9 +44,9 @@ Overdrive, stereo, built in gen~. Tight cuts the lows before the drive so it sta
 
 | File | What it is |
 |---|---|
-| br.overdrive.1.0 | No UI. The plain object to patch with |
-| br.overdrive.ui.1.0 | With dials for Drive, Tight, Tone, Bias, Level and Dry/Wet and Auto-gain and On/Off buttons, ready for a [bpatcher] (168 x 157) |
-| _br.overdrive.example.1.0 | Example patch: open this first. Pick a source (drum loop, voice, synth plucks, a stereo pair or your mic) |
+| br.overdrive.1.1 | No UI. The plain object to patch with |
+| br.overdrive.ui.1.1 | With dials for Drive, Tight, Tone, Bias, Level and Dry/Wet and Auto-gain and On/Off buttons, ready for a [bpatcher] (168 x 157) |
+| _br.overdrive.example.1.1 | Example patch: open this first. Pick a source (drum loop, voice, synth plucks, a stereo pair or your mic) |
 
 The UI version contains the plain version and has the same inlets and audio outlets (plus State last), so either swaps in without rewiring. Open the UI version in patching mode for comments on how it is built.
 
@@ -60,9 +60,9 @@ By saving your logic in an abstraction, you can create modules that can be used 
 
 1. Make sure you have Max 9 installed, and that the Max patch you are using is saved inside a folder.
 
-2. Copy the .maxpat files you want into the same folder as your patch. The UI version needs the plain version next to it (br.overdrive.ui.1.0 uses br.overdrive.1.0).
+2. Copy the .maxpat files you want into the same folder as your patch. The UI version needs the plain version next to it (br.overdrive.ui.1.1 uses br.overdrive.1.1).
 
-3. In your patch, create an object called br.overdrive.1.0. For the version with controls, create a [bpatcher] and choose br.overdrive.ui.1.0.maxpat as its patcher.
+3. In your patch, create an object called br.overdrive.1.1. For the version with controls, create a [bpatcher] and choose br.overdrive.ui.1.1.maxpat as its patcher.
 
 ## <a name="Use"></a>How To Use
 
